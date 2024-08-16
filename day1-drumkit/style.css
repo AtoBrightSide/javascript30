@@ -32,6 +32,6 @@ body {
 }
 
 .playing {
-    transform: scale(1.2);
+    transform: scale(1.05);
     border: 5px solid #ffce46 ;
 }
