@@ -25,6 +25,16 @@ const playSound = (letter) => {
 
     const player = document.querySelector(drum_sound)
     player.currentTime = 0
+
+    const playerParent = document.getElementById(drum_letter).parentElement
+    playerParent.classList.add("playing")
+
     player.play()
 }
 
+const removeTransition = (e) => {
+    e.srcElement.classList.remove("playing")
+}
+
+const boxes = document.querySelectorAll(".box")
+boxes.forEach(box => box.addEventListener("transitionend", removeTransition))
