@@ -11,6 +11,6 @@ BLUR.addEventListener('mousemove', (event) => {
 })
 
 const BASE_COLOR = document.getElementById('base');
-BASE_COLOR.addEventListener('mousemove', (event) => {
+BASE_COLOR.addEventListener('change', (event) => {
     root.style.setProperty('--base', event.target.value)
 })
