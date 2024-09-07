@@ -4,7 +4,7 @@ const hourHand = document.getElementById("hour-hand");
 
 setInterval(() => {
     let currSecond = new Date().getSeconds();
-    if (currSecond === 0) currSecond = 60;
+    if (currSecond === 0) { secondHand.style.transition = 'none'; }
     secondHand.style.transform = `rotate(${(currSecond * 6) + 90}deg)`
     let currMin = new Date().getMinutes();
     if (currMin === 0) currMin = 60;
