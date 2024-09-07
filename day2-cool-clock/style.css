@@ -45,5 +45,5 @@ html {
     top: 50%;
     transform: rotate(90deg);
     transform-origin: 100%;
-    transition: all .05s ease-in;
+    transition: all 1s ease-in;
   }
